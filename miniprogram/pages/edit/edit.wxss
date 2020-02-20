@@ -1,0 +1,15 @@
+/* pages/edit/edit.wxss */
+.note-content{
+  min-height: 400rpx;
+  width: 660rpx;
+  margin: 30rpx auto;
+  border-radius: 15rpx;
+  padding: 20rpx;
+  background: rgba(220, 221, 225,0.5);
+}
+.btn{
+  text-align: center;
+}
+.btn  button{
+  margin-top: 20rpx; 
+}

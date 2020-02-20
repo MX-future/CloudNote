@@ -1,0 +1,10 @@
+<!--pages/edit/edit.wxml-->
+<view>
+  <form bind:submit="upNote">
+  <textarea class="note-content" name="content" value="{{noteData.content}}"></textarea>
+    <view class="btn">
+      <button type="primary" form-type="submit">更新</button>
+      <button type="warn" bind:tap="cancel">取消</button>
+    </view>
+  </form>
+</view>

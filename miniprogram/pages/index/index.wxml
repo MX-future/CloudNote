@@ -1,0 +1,22 @@
+<!--pages/index/index.wxml-->
+<block wx:if="{{data.length != 0}}" wx:for="{{data}}" wx:key="index">
+  <i-card 
+  extra="{{item.name}}" 
+  thumb="/static/img/note.jpg" 
+  bind:longpress="deleNote"
+  bind:tap="toEdit"
+  data-name="{{item.name}}"
+  data-content="{{item.content}}"
+  data-id="{{item._id}}"
+  class="card-item">
+      <view slot="content">{{item.content}}</view>
+      <view slot="footer">{{item.time}}</view>
+  </i-card>
+</block>
+
+<view class="add" bind:tap="toAdd">+</view>
+<block wx:if="{{data.length === 0 }}">
+  <image src="/static/img/kong.png" class="none-img"></image>
+  <text class="none-text">便签为空</text>
+</block>
+

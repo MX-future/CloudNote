@@ -1,0 +1,26 @@
+/* pages/index/index.wxss */
+.card-item{
+  margin-top: 20rpx;
+}
+.add{
+  background: rgba(72, 219, 251,0.7);
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  position: fixed;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 60rpx;
+  font-weight: bold;
+  bottom: 90rpx;
+  right: 40rpx;
+}
+.none-img{
+  width: 400rpx;
+  height: 350rpx;
+  margin: 140rpx auto;
+}
+.none-text{
+  text-align: center;
+  color: grey;
+}

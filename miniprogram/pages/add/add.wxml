@@ -1,0 +1,10 @@
+<!--pages/add/add.wxml-->
+<view>
+  <form bind:submit="addNote">
+  <textarea class="note-content" name="content"></textarea>
+    <view class="btn">
+      <button type="primary" form-type="submit">添加</button>
+      <button type="warn" bind:tap="cancel">取消</button>
+    </view>
+  </form>
+</view>
